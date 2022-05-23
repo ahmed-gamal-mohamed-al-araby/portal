@@ -400,4 +400,9 @@ return [
     'enter-password' => 'من فضلك أدخل كلمة المرور',
     'enter-email' => 'من فضلك أدخل البريد الإلكترونى',
     'email-username-code' => 'البريد الإلكترونى أو اسم المستخدم او الكود',
+    "change_password" => "تغيير كلمة السر ",
+    "current_password" => "كلمة السر الحالية",
+    "confirm_password" => " تأكيد كلمة السر  ",
+    "new_confirm_password" => " تأكيد كلمة السر الجديدة",
+    "update_password" => "تحديث كلمة السر ",
 ];

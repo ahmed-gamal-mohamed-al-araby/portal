@@ -65,6 +65,7 @@ Route::group(
 
                 Route::get('organization/chart', OrganizationChartController::class)->name('organization.chart.index');
 
+                
                 // Sector
                 Route::group([], function () {
                     Route::get('sector/trash', [SectorController::class, 'trash_index'])->name('sector.trash_index');
@@ -122,6 +123,9 @@ Route::group(
                     Route::get('employee/restore/{id}', [UserController::class, 'restore'])->name('employee.restore.employee');
                     Route::post('employee/active', [UserController::class, 'active'])->name('employee.restore');
                     Route::resource('employee', UserController::class)->except('destroy');
+                    Route::get('change/password', [UserController::class,"changePassword"])->name('change_password');
+                    Route::post('change/password', [UserController::class,"changePasswordStore"])->name('change_password_store');
+
                 });
 
                 // Job Code

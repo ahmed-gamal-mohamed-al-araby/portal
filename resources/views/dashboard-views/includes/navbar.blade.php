@@ -22,7 +22,11 @@ $profileImage = Auth::user()->profile ? Auth::user()->profile : 'user_profile.pn
                 <img class="profile-photo-dropdown" src="{{ asset('uploaded-files/users/profile/' . $profileImage) }}"
                     alt="user profile">
                 <p class="profile-name-dropdown"> {{ Auth::user()->username }} </p>
-
+                <a class="dropdown-item text-center" href="{{route('change_password')}}" >
+                <i
+                            class="fas fa-key ml-2"></i> <span
+                        class=" float-right0 text-muted text-sm">@lang('site.change_password')</span>
+                </a>
                 <div class="dropdown-divider"></div>
 
                 {{-- <p class="m-2 text-center"><a href="{{ route('users.show_reset_password') }}"> <i

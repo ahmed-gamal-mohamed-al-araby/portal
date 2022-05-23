@@ -393,4 +393,11 @@ return [
     'enter-password' => 'Please enter password',
     'enter-email' => 'Please enter E-mail',
     'email-username-code' => 'E-mail, username or code',
+    "change_password" => "Change Password",
+
+    "change_password" => "Change Password",
+    "current_password" => "Current Password",
+    "confirm_password" => " Confirm Password  ",
+    "new_confirm_password" => "New Confirm Password",
+    "update_password" => "Update Password",
 ];
